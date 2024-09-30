@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <Titulo Titulo="Escudo America de Cali"/>
+      <Titulo Titulo="El America de Cali"/>
       <Imagen Ruta="./america.jpg"></Imagen>
       <Details Genero="Masculino" Estado="15 títulos del fútbol colombiano"></Details>
     </div>
