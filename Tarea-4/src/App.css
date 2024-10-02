@@ -1,0 +1,27 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.character-card {
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  padding: 10px; 
+  text-align: center; 
+  margin: 10px; 
+  background-color: #21b0c9; 
+}
+
+.character-card img {
+  width: 110px; 
+  height: auto; 
+  border-radius: 5px; 
+}
+
+.character-card h1 {
+  font-size: 18px; 
+  margin: 5px 0; 
+}
