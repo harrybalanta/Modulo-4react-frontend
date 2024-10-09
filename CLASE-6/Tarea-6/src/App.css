@@ -1,0 +1,72 @@
+/* App.css */
+
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+
+.character-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ccc; 
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+  transform: scale(1.05); 
+}
+
+.character-card img {
+  width: 140px; 
+  height: 140px;
+  object-fit: cover; 
+  border-radius: 10px; 
+  border: 2px solid #000; 
+}
+
+
+.character-card h1, 
+.character-card h2 {
+  margin: 10px 0;
+  font-size: 14px; 
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.paginacion button {
+  background-color: #000; 
+  color: #00FF00; 
+  border: 2px solid #00FF00; 
+  padding: 15px 30px; 
+  margin: 0 10px; 
+  font-size: 18px; 
+  cursor: pointer; 
+  border-radius: 10px; 
+  transition: background-color 0.3s, color 0.3s; 
+
+}
+
+.paginacion button:hover {
+  background-color: #00FF00; 
+  color: #000; 
+}
+
+.paginacion button:active {
+  transform: scale(0.95); 
+}
+
+.paginacion button:disabled {
+  background-color: #444; 
+  cursor: not-allowed; 
+}
