@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     const charactersList = async () => {
-      const url = "https://rickandmortyapi.com/api/character/?page=1";
+      const url = "https://rickandmortyapi.com/api/character/?page=2";
 
       try {
         const res = await fetch(url);
