@@ -1,0 +1,110 @@
+/* App.css */
+
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+
+.character-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ccc; 
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+  transform: scale(1.05); 
+}
+
+.character-card img {
+  width: 140px; 
+  height: 140px;
+  object-fit: cover; 
+  border-radius: 10px; 
+  border: 2px solid #000; 
+}
+
+
+.character-card h1, 
+.character-card h2 {
+  margin: 10px 0;
+  font-size: 14px; 
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.paginacion button {
+  background-color: #000; 
+  color: #00FF00; 
+  border: 2px solid #00FF00; 
+  padding: 15px 30px; 
+  margin: 0 10px; 
+  font-size: 18px; 
+  cursor: pointer; 
+  border-radius: 10px; 
+  transition: background-color 0.3s, color 0.3s; 
+
+}
+
+.paginacion button:hover {
+  background-color: #00FF00; 
+  color: #000; 
+}
+
+.paginacion button:active {
+  transform: scale(0.95); 
+}
+
+.paginacion button:disabled {
+  background-color: #444; 
+  cursor: not-allowed; 
+}
+
+nav ul {
+  list-style-type: none; /* Quita los puntos de la lista */
+  display: flex; /* Coloca los elementos en línea */
+  gap: 10px; /* Espacio entre los elementos */
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 15px; /* Opcional, si quieres espacio extra entre los enlaces */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remueve subrayado de los enlaces */
+  color: #000; /* Cambia el color del texto del enlace */
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Cambia el color cuando el mouse pasa por encima */
+}
+
+.episode-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* Espaciado entre los episodios */
+  padding: 20px;
+}
+
+.episode-card {
+  background-color: #f9f9f9; /* Color de fondo */
+  border: 1px solid #ddd; /* Borde del card */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 12px; /* Espaciado interno */
+  width: 150px; /* Ancho fijo para los episodios */
+  text-align: center; /* Centrar texto */
+  transition: transform 0.2s; /* Efecto al pasar el mouse */
+}
